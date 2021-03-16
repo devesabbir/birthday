@@ -15,6 +15,7 @@ body {
     font-weight: 900;
     -webkit-user-select: none;
     user-select: none;
+   
   }
   
   
@@ -22,8 +23,8 @@ body {
       display: inline-block;
     text-transform:uppercase;
     color:red;
-    animation: mimi 3s linear infinite;
-   
+    animation: mimi 3s ease-in-out infinite;
+    animation-direction: alternate-reverse;
     animation-delay: .4s;
     font-family: 'Pacifico', cursive;
   
@@ -52,7 +53,9 @@ body {
         background-image: linear-gradient(to left, red,blue,pink);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: rotate(-360deg) translateX(400%);
+        transform: rotate(-360deg) scale(0.1);
+       
+      
     }
   }
 
